@@ -17,6 +17,23 @@ php mssql query lib for lazy people
 * lazyquery.php
 
 ### how to use
+#### quick 
+
+```php
+    require ("lazyquery.php"); 
+
+    $x = new DB (); // use  "config.json" by default.
+
+    $dataobject = $x->query ( "SELECT * FROM tbl_test" );
+
+     print_r( $dataobject['data'] );
+
+    $x->close();
+```
+
+
+#### detail 
+
 ```php
     // load class.
     require ("lazyquery.php"); 
