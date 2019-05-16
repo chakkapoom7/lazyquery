@@ -18,6 +18,25 @@ php mssql query lib for lazy people
 
 ### how to use
 ```php
-//i'm lazy to write it. 
-//it come soon. may be.
+    // load class.
+    require ("lazyquery.php"); 
+
+    // instantiate.
+    $x = new DB (); // use  "config.json" by default.
+    // or
+    // $x = new DB ("otherconfig.json");
+    
+    // call quary.
+    $dataobject = $x->query ( "SELECT * FROM tbl_test" );
+
+    // use data.
+    if($dataobject['result']){
+        print_r( $dataobject['data'] );
+    }else{
+        echo "query unsuccess.\n\r";
+        print_r( $dataobject['data'] );
+    }
+
+    // close.
+    $x->close();
 ```
