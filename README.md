@@ -1,8 +1,9 @@
 # lazyquery
-php mssql query lib for lazy people
+php mssql/mysql query lib for lazy people
 
 ### rerquiment
-* php with sqlsrv plugin.
+* php 
+* sqlsrv plugin for mssql.
 
 ### structure
 * config.json
@@ -11,7 +12,8 @@ php mssql query lib for lazy people
     "dburl"     : "dburl",
     "username"  : "dbusername",
     "password"  : "dbpassword",
-    "dbname"    : "dbname"
+    "dbname"    : "dbname",
+    "dbtype"    : "mssql/mysql"
 }
 ```
 * lazyquery.php

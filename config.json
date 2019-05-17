@@ -2,8 +2,8 @@
     "dburl" : "dburl",
     "username" : "username",
     "password" : "password",
-    "dbname"   : "dbname"
+    "dbname"   : "dbname",
+    "dbtype"   : "mssql/mysql"
 }
-
 
 
