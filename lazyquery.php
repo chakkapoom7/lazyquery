@@ -21,6 +21,7 @@ class DB
         } elseif ($this->config['dbtype'] === "mysql") {
 
             $conn = mysqli_connect($this->config['dburl'], $this->config['username'], $this->config['password'], $this->config['dbname']);
+            mysqli_set_charset($conn,"utf8");
             if (mysqli_connect_errno()) {
                 die("Failed to connect to MySQL: " . mysqli_connect_error());
             }
